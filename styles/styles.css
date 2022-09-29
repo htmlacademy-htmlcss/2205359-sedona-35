@@ -462,6 +462,7 @@ body {
   font-size: 18px;
   line-height: 21px;
   border: 1px solid #E6E6E6;
+  border-radius: 4px;
   height: 49px;
 }
 
@@ -486,7 +487,7 @@ body {
 }
 
 .hotel-list-item {
- border: 0.1px solid #E6E6E6;
+ outline: #E6E6E6 solid 1px;
  border-radius: 4px;
  margin-bottom: 20px;
 }
