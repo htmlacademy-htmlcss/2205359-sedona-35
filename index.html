@@ -5,16 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="styles\styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 <body>
+  <div class="content-wrapper">
     <!-- Шапка -->
     <header class="main-header">
         <nav class="navigation">
-            <a class="navigation-logo" href="index.html">
-                <img class="page-header-logo" src="images\header-logo.svg" width="140" height="70" alt="Логотип сайта города Седона">
-            </a>
+          <a class="navigation-logo" href="index.html">
+                <img class="page-header-logo" src="images/header-logo.svg" width="140" height="70" alt="Логотип сайта города Седона">
+          </a>
+          <div class="navigation-wrapper">
             <ul class="navigation-list">
                 <li class="navigation-item">
                     <span class="navigation-link">Главная</span>
@@ -41,20 +43,24 @@
                     <a class="button button-link" href="#">Хочу сюда!</a>
                 </li>
             </ul>
+          </div>
         </nav>
     </header>
 
      <!-- Основное содержание -->
-    <main class="main-index">
+    <main class="main-container main-index">
         <div class="intro-wrapper">
             <h1 class="visually-hidden">Город Седона</h1>
-            <img class="intro-image" src="images\main-welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону">
+            <img class="intro-image" src="images/main-welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону">
         </div>
         <!-- Преимущества -->
+
         <section class="advantages">
           <h2 class="visually-hidden">Причины посетить Седону</h2>
-          <p class="advantages-intro">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
-          <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          <div class="advantages-intro-wrapper">
+            <p class="advantages-intro">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
+            <p class="advantages-reasons">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+          </div>
           <div class="advantages-recommendations">
               <ul class="advantages-list">
                 <li class="advantages-item">
@@ -62,7 +68,7 @@
                     <h3 class="advantages-title">Настоящий городок</h3>
                     <p class="advantages-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
                   </div>
-                    <img class="advantage-illustration" src="images\advantages-city.jpg" width="800" height="384" alt="Фотография города Седона">
+                    <img class="advantage-illustration" src="images/advantages-city.jpg" width="800" height="384" alt="Фотография города Седона">
                 </li>
                 <li class="advantages-item">
                   <div class="advantage-about">
@@ -87,7 +93,7 @@
                     <h3 class="advantages-title">Там есть мост дьявола</h3>
                     <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
                   </div>
-                    <img class="advantage-illustration" src="images\advantages-bridge.jpg" width="800" height="384" alt="Фотография моста дьявола">
+                    <img class="advantage-illustration" src="images/advantages-bridge.jpg" width="800" height="384" alt="Фотография моста дьявола">
                 </li>
               </ul>
               <h2 class="visually-hidden">Рекомендации</h2>
@@ -161,12 +167,10 @@
                     </a>
                 </li>
             </ul>
-            <div class="footer-link-wrapper">
-              <address class="address-links">
-                <a class="phone-link" href="tel:88128121212">+7 (812) 812-12-12</a>
-              </address>
-              <a class="partner-link" href="https://htmlacademy.ru/"><img src="images\footer-html-academy.svg" width="114.9px" height="32.9px" alt="HTML-Academy"></a>
-            </div>
+            <address class="address-links">
+              <a class="phone-link" href="tel:88128121212">+7 (812) 812-12-12</a>
+            </address>
+            <a class="partner-link" href="https://htmlacademy.ru/"><img src="images/footer-html-academy.svg" width="115" height="33" alt="HTML-Academy"></a>
         </section>
     </footer>
 
@@ -176,7 +180,7 @@
 
 
     <!-- Модальное окно -->
-    <div class="modal-container">
+    <!-- <div class="modal-container">
         <div class="modal modal-search">
             <button class="modal-close-button">
                 <span class="visually-hidden">Закрыть</span>
@@ -210,6 +214,7 @@
                 </form>
             </section>
         </div>
-    </div>
+    </div> -->
+  </div>
 </body>
 </html>
