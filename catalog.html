@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Гостиницы</title>
-    <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
   <div class="content-wrapper">
@@ -17,19 +17,19 @@
                 <img class="page-header-logo" src="images/header-logo.svg" width="140" height="70" alt="Логотип сайта города Седона">
           </a>
           <div class="navigation-wrapper">
-            <ul class="navigation-list">
+            <ul class="navigation-list  reset-margin-padding">
                 <li class="navigation-item">
                     <a class="navigation-link" href="index.html">Главная</a>
                 </li>
                 <li class="navigation-item">
-                    <a class="navigation-link" href="#">О седоне</a>
+                    <a class="navigation-link" href="#">О Седоне</a>
                 </li>
                 <li class="navigation-item">
                     <a class="navigation-link current" href="catalog.html">Гостиницы</a>
                 </li>
             </ul>
 
-            <ul class="navigation-list navigation-user">
+            <ul class="navigation-list navigation-user  reset-margin-padding">
                 <li class="navigation-item">
                     <a class="navigation-link search" href="#">
                         <span class="visually-hidden">Поиск</span>
@@ -54,8 +54,8 @@
         <h2 class="visually-hidden">Выбор гостиницы</h2>
         <div class="filter-wrapper">
           <header class="main-inner-header">
-            <h1 class="main-inner-header-title">Гостиницы Седоны</h1>
-            <ul class="breadcrumbs">
+            <h1 class="main-inner-header-title reset-margin-padding">Гостиницы Седоны</h1>
+            <ul class="breadcrumbs reset-margin-padding">
                 <li class="breadcrumbs-item">
                     <a class="breadcrumbs-link" href="index.html">
                       <span class="visually-hidden">На главную</span>
@@ -68,24 +68,24 @@
           </header>
           <form class="hotel-filter-form" action="https://echo.htmlacademy.ru/" method="get">
             <div class="hotel-filter-group-left">
-              <fieldset class="hotel-filter-group">
-                <legend class="hotel-filter-title">
+              <fieldset class="hotel-filter-group reset-margin-padding">
+                <legend class="hotel-filter-title reset-margin-padding">
                   Инфраструктура:
                 </legend>
-                <ul class="hotel-filter-list">
-                  <li class="hotel-filter-item">
+                <ul class="hotel-filter-list reset-margin-padding">
+                  <li class="hotel-filter-item reset-margin-padding">
                     <label class="control">
                       <input class="control-input" type="checkbox" name="pool" id="pool" checked>
                       Бассейн
                     </label>
                   </li>
-                  <li class="hotel-filter-item">
+                  <li class="hotel-filter-item reset-margin-padding">
                     <label class="control">
                       <input class="control-input" type="checkbox" name="parking" id="parking" checked>
                       Парковка
                     </label>
                   </li>
-                  <li class="hotel-filter-item">
+                  <li class="hotel-filter-item reset-margin-padding">
                     <label class="control">
                       <input class="control-input" type="checkbox" name="wi-fi" id="wi-fi">
                       Wi-Fi
@@ -93,24 +93,24 @@
                   </li>
                 </ul>
                 </fieldset>
-                <fieldset class="hotel-filter-group">
-                  <legend class="hotel-filter-title">
+                <fieldset class="hotel-filter-group reset-margin-padding">
+                  <legend class="hotel-filter-title reset-margin-padding">
                     Тип жилья:
                   </legend>
-                  <ul class="hotel-filter-list">
-                    <li class="hotel-filter-item">
+                  <ul class="hotel-filter-list reset-margin-padding">
+                    <li class="hotel-filter-item reset-margin-padding">
                       <label class="control">
                         <input class="control-input" type="radio" name="housing" id="hotel" value="hotel" checked>
                         Гостиница
                       </label>
                     </li>
-                    <li class="hotel-filter-item">
+                    <li class="hotel-filter-item reset-margin-padding">
                       <label class="control">
                         <input class="control-input" type="radio" name="housing" id="motel" value="motel">
                         Мотель
                       </label>
                     </li>
-                    <li class="hotel-filter-item">
+                    <li class="hotel-filter-item reset-margin-padding">
                       <label class="control">
                         <input class="control-input" type="radio" name="housing" id="apartments" value="apartments">
                         Апартаменты
@@ -120,8 +120,8 @@
                 </fieldset>
               </div>
               <div class="hotel-filter-group-right">
-                <fieldset class="hotel-filter-group">
-                  <legend class="hotel-filter-title">
+                <fieldset class="hotel-filter-group reset-margin-padding">
+                  <legend class="hotel-filter-title reset-margin-padding">
                     Стоимость, ₽:
                   </legend>
                     <!-- слайдер? в скринкасте говорят разметить его позже
@@ -162,7 +162,7 @@
 
       <section class="hotel-catalog">
         <h2 class="visually-hidden">Список гостиниц</h2>
-          <ul class="hotel-list">
+          <ul class="hotel-list reset-margin-padding">
             <li class="hotel-list-item">
               <div class="hotel-list-content">
                 <a class="hotel-list-link" href="#">
@@ -174,7 +174,7 @@
                   <b class="hotel-price">От 4000 ₽</b>
                   <a class="button button-link" href="#">Подробнее</a>
                   <button class="button button-submit" type="button">В избранное</button>
-                  <p class="hotel-stars hotel-stars-4">
+                  <p class="hotel-stars hotel-stars-4 reset-margin-padding">
                     <span class="visually-hidden">4 звезды</span>
                   </p>
                   <span class="hotel-rating button">Рейтинг: 8,5</span>
@@ -192,7 +192,7 @@
                   <b class="hotel-price">От 5000 ₽</b>
                   <a class="button button-link" href="#">Подробнее</a>
                   <button class="button button-added" type="button">В избранном</button>
-                  <p class="hotel-stars hotel-stars-4">
+                  <p class="hotel-stars hotel-stars-4 reset-margin-padding">
                     <span class="visually-hidden">4 звезды</span>
                   </p>
                   <span class="hotel-rating button">Рейтинг: 9,2</span>
@@ -210,7 +210,7 @@
                   <b class="hotel-price">От 2500 ₽</b>
                   <a class="button button-link" href="#">Подробнее</a>
                   <button class="button button-submit" type="button">В избранное</button>
-                  <p class="hotel-stars hotel-stars-3">
+                  <p class="hotel-stars hotel-stars-3 reset-margin-padding">
                     <span class="visually-hidden">3 звезды</span>
                   </p>
                   <span class="hotel-rating button">Рейтинг: 6,9</span>
@@ -228,7 +228,7 @@
                   <b class="hotel-price">От 1500 ₽</b>
                   <a class="button button-link" href="#">Подробнее</a>
                   <button class="button button-submit" type="button">В избранное</button>
-                  <p class="hotel-stars hotel-stars-2">
+                  <p class="hotel-stars hotel-stars-2 reset-margin-padding">
                     <span class="visually-hidden">2 звезды</span>
                   </p>
                   <span class="hotel-rating button">Рейтинг: 5,0</span>
@@ -236,7 +236,7 @@
               </div>
             </li>
           </ul>
-          <ul class="pagination">
+          <ul class="pagination reset-margin-padding">
             <li class="pagination-item">
               <a class="pagination-link pagination-current">1</a>
             </li>
@@ -263,20 +263,20 @@
     <footer class="page-footer">
         <section class="subscription subscribtion-inner">
           <div class="subscription-content">
-            <h2 class="subscription-title">Подпишитесь на рассылку</h2>
+            <h2 class="subscription-title reset-margin-padding">Подпишитесь на рассылку</h2>
             <p class="subscription-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
                 <p class="subscription-form-email">
-                    <input class="subscription-input" type="email" name="email" id="subscription-email" placeholder="Ваш e-mail">
+                    <input class="subscription-input reset-margin-padding" type="email" name="email" id="subscription-email" placeholder="Ваш e-mail">
                     <label class="visually-hidden" for="subscription-email">Введите ваш e-mail</label>
-                    <button class="button button-submit" type="submit">Подписаться</button>
+                    <button class="button button-submit reset-margin-padding" type="submit">Подписаться</button>
                 </p>
             </form>
           </div>
         </section>
         <section class="footer-contacts">
             <h2 class="visually-hidden">Контакты</h2>
-            <ul class="social-links-list">
+            <ul class="social-links-list reset-margin-padding">
                 <li class="social-links-item">
                     <a class="social-links-link vk-link" href="https://vk.com/htmlacademy">
                         <span class="visually-hidden">В контакте</span>
