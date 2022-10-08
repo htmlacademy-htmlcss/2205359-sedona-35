@@ -86,10 +86,12 @@ body {
 
 /* header navigation */
 
-.main-header, .inner-header {
-  padding-top: 15px;
+/* ---после того, как я задала внутренние отступы ссылкам - не нужно ни высоту,
+------ни отступы хедеру указывать, верно? Высота сама выстроилась на 64 пикселя
+ .main-header, .inner-header {
+  /* padding-top: 15px;
   padding-bottom: 15px;
-}
+} */
 
 .navigation {
   width: 1060px;
@@ -121,6 +123,11 @@ body {
   max-width: 400px;
 }
 
+.navigation-list:first-child .navigation-link {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .navigation-list:first-child .navigation-item:not(:last-child) {
   margin-right: 32px;
 }
@@ -130,6 +137,7 @@ body {
   max-width: 300px;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .navigation-link {
@@ -138,6 +146,7 @@ body {
   line-height: 24px;
   color: #000000;
   text-decoration: none;
+  display: block;
 }
 
 .navigation-user .navigation-item:last-child {
@@ -151,10 +160,9 @@ body {
 
 .search, .favorites {
   width: 44px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  display: block;
 }
 
 .search {
@@ -392,16 +400,11 @@ body {
   flex-wrap: wrap;
 }
 
-.social-links-item {
-  width: 47px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-}
 
 .social-links-link {
-  margin: 0 auto;
-  padding: 13px 12px;
+  display: block;
+  min-width: 47px;
+  min-height: 40px;
 }
 
 .vk-link {
