@@ -87,12 +87,12 @@ body {
 /* header navigation */
 
 .main-header, .inner-header {
-  height: 64px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .navigation {
   width: 1060px;
-  height: 100%;
   margin: 0 auto;
 }
 
@@ -105,15 +105,16 @@ body {
 
 .navigation-wrapper {
   flex-basis: 876px;
-  height: 100%;
   margin-left: 186px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
 .navigation-list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .navigation-list:first-child {
@@ -170,7 +171,7 @@ body {
   height: 485px;
   text-align: center;
   background:
-    url("../images/index-divider.svg") 0 428px no-repeat,
+    url("../images/index-divider.svg") 0 100% no-repeat,
     url("../images/index-background.jpg") no-repeat;
   background-color: #82B3D3;
 }
@@ -238,7 +239,7 @@ body {
 
 .advantage-about {
   width: 230px;
-  margin:auto;
+  margin: auto;
   margin-top: 103px;
   margin-bottom: 121px;
 }
@@ -291,7 +292,6 @@ body {
 
 .hotel-search-wrapper {
   width: 592px;
-  height: 214px;
   margin: 96px auto;
   display: flex;
   flex-direction: column;
@@ -323,12 +323,13 @@ body {
 
 .subscription {
   text-align: center;
-  height: 414px;
+  min-height: 414px;
   padding-top: 1px
 }
 
 .subscribtion-main {
   background: url("../images/subscribe-background.jpg") no-repeat;
+  background-size: cover;
   color: #ffffff;
 }
 
@@ -341,9 +342,9 @@ body {
 
 .subscription-content {
   width: 684px;
-  margin: auto;
-  margin-top: 96px;
-  margin-bottom: 104px;
+  margin: 0 auto;
+  padding-top: 96px;
+  padding-bottom: 104px;
 }
 
 .subscription-form-email {
@@ -376,7 +377,8 @@ body {
 /* footer */
 .footer-contacts {
   width: 1060px;
-  height: 120px;
+  padding-top: 40px;
+  padding-bottom: 30px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -385,15 +387,21 @@ body {
 
 .social-links-list {
   list-style: none;
+  max-width: 142px;
   display: flex;
-  width: 142px;
-  min-height: 40px;
+  flex-wrap: wrap;
+}
+
+.social-links-item {
+  width: 47px;
+  height: 40px;
+  display: flex;
+  align-items: center;
 }
 
 .social-links-link {
-  width: 47px;
-  height: 100%;
-  display: flex;
+  margin: 0 auto;
+  padding: 13px 12px;
 }
 
 .vk-link {
@@ -415,7 +423,6 @@ body {
   line-height: 40px;
   text-decoration: none;
   color: #000000;
-  margin: auto;
 }
 
 .partner-link {
@@ -465,8 +472,12 @@ body {
 
 .hotel-filter-group-left, .hotel-filter-group-right {
   display: flex;
+  gap: 70px
 }
 
+.hotel-filter-group-left {
+  min-width: 370px;
+}
 
 .hotel-filter-group {
   font-size: 18px;
@@ -474,9 +485,10 @@ body {
   border: none;
 }
 
-.hotel-filter-group:first-child {
+/*---Пока что убрала внешний отступ в пользу использования gap, мне кажется, так будет лучше при переполнении контентом?
+ .hotel-filter-group:first-child {
   margin-right: 70px;
-}
+} */
 
 .hotel-filter-title {
   font-weight: 700;
@@ -487,6 +499,10 @@ body {
 .hotel-filter-list {
   list-style: none;
   margin-top: 32px;
+  max-height: 160px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .hotel-filter-item:not(:last-child) {
@@ -515,7 +531,6 @@ body {
 
  .hotel-catalog-settings {
   width: 1060px;
-  height: 49px;
   margin: 50px auto 40px;
   display: flex;
   align-items: center;
@@ -660,6 +675,7 @@ body {
   color: #ffffff;
   border-radius: 4px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   width: 60px;
