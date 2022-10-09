@@ -86,13 +86,15 @@ body {
 
 /* header navigation */
 
-.main-header, .inner-header {
-  height: 64px;
-}
+/* ---после того, как я задала внутренние отступы ссылкам - не нужно ни высоту,
+------ни отступы хедеру указывать, верно? Высота сама выстроилась на 64 пикселя
+ .main-header, .inner-header {
+  /* padding-top: 15px;
+  padding-bottom: 15px;
+} */
 
 .navigation {
   width: 1060px;
-  height: 100%;
   margin: 0 auto;
 }
 
@@ -105,19 +107,25 @@ body {
 
 .navigation-wrapper {
   flex-basis: 876px;
-  height: 100%;
   margin-left: 186px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
 .navigation-list {
-  list-style: none;
+  list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .navigation-list:first-child {
   max-width: 400px;
+}
+
+.navigation-list:first-child .navigation-link {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .navigation-list:first-child .navigation-item:not(:last-child) {
@@ -129,6 +137,7 @@ body {
   max-width: 300px;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .navigation-link {
@@ -137,6 +146,7 @@ body {
   line-height: 24px;
   color: #000000;
   text-decoration: none;
+  display: block;
 }
 
 .navigation-user .navigation-item:last-child {
@@ -150,10 +160,9 @@ body {
 
 .search, .favorites {
   width: 44px;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  padding-top: 23px;
+  padding-bottom: 23px;
+  display: block;
 }
 
 .search {
@@ -170,7 +179,7 @@ body {
   height: 485px;
   text-align: center;
   background:
-    url("../images/index-divider.svg") 0 428px no-repeat,
+    url("../images/index-divider.svg") 0 100% no-repeat,
     url("../images/index-background.jpg") no-repeat;
   background-color: #82B3D3;
 }
@@ -200,7 +209,7 @@ body {
 }
 
 .advantages-list, .recommendation-list {
-  list-style: none;
+  list-style-type: none;
 }
 
 .advantages-list {
@@ -238,7 +247,7 @@ body {
 
 .advantage-about {
   width: 230px;
-  margin:auto;
+  margin: auto;
   margin-top: 103px;
   margin-bottom: 121px;
 }
@@ -291,7 +300,6 @@ body {
 
 .hotel-search-wrapper {
   width: 592px;
-  height: 214px;
   margin: 96px auto;
   display: flex;
   flex-direction: column;
@@ -323,12 +331,13 @@ body {
 
 .subscription {
   text-align: center;
-  height: 414px;
+  min-height: 414px;
   padding-top: 1px
 }
 
 .subscribtion-main {
   background: url("../images/subscribe-background.jpg") no-repeat;
+  background-size: cover;
   color: #ffffff;
 }
 
@@ -341,9 +350,9 @@ body {
 
 .subscription-content {
   width: 684px;
-  margin: auto;
-  margin-top: 96px;
-  margin-bottom: 104px;
+  margin: 0 auto;
+  padding-top: 96px;
+  padding-bottom: 104px;
 }
 
 .subscription-form-email {
@@ -376,7 +385,8 @@ body {
 /* footer */
 .footer-contacts {
   width: 1060px;
-  height: 120px;
+  padding-top: 40px;
+  padding-bottom: 30px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -384,16 +394,17 @@ body {
 }
 
 .social-links-list {
-  list-style: none;
+  list-style-type: none;
+  max-width: 142px;
   display: flex;
-  width: 142px;
-  min-height: 40px;
+  flex-wrap: wrap;
 }
 
+
 .social-links-link {
-  width: 47px;
-  height: 100%;
-  display: flex;
+  display: block;
+  min-width: 47px;
+  min-height: 40px;
 }
 
 .vk-link {
@@ -415,7 +426,6 @@ body {
   line-height: 40px;
   text-decoration: none;
   color: #000000;
-  margin: auto;
 }
 
 .partner-link {
@@ -446,7 +456,7 @@ body {
 .breadcrumbs {
   font-size: 16px;
   line-height: 21px;
-  list-style: none;
+  list-style-type: none;
   margin-top: 8px;
   display: flex;
   align-items: center;
@@ -465,8 +475,12 @@ body {
 
 .hotel-filter-group-left, .hotel-filter-group-right {
   display: flex;
+  gap: 70px
 }
 
+.hotel-filter-group-left {
+  min-width: 370px;
+}
 
 .hotel-filter-group {
   font-size: 18px;
@@ -474,9 +488,10 @@ body {
   border: none;
 }
 
-.hotel-filter-group:first-child {
+/*---Пока что убрала внешний отступ в пользу использования gap, мне кажется, так будет лучше при переполнении контентом?
+ .hotel-filter-group:first-child {
   margin-right: 70px;
-}
+} */
 
 .hotel-filter-title {
   font-weight: 700;
@@ -485,8 +500,12 @@ body {
 }
 
 .hotel-filter-list {
-  list-style: none;
+  list-style-type: none;
   margin-top: 32px;
+  max-height: 160px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .hotel-filter-item:not(:last-child) {
@@ -515,7 +534,6 @@ body {
 
  .hotel-catalog-settings {
   width: 1060px;
-  height: 49px;
   margin: 50px auto 40px;
   display: flex;
   align-items: center;
@@ -553,7 +571,7 @@ body {
 .hotel-list {
   font-size: 18px;
   line-height: 21px;
-  list-style: none;
+  list-style-type: none;
   display: grid;
   grid-template-columns: repeat(3, 340px);
   column-gap: 20px;
@@ -647,7 +665,7 @@ body {
   font-size: 20px;
   font-weight: 700;
   line-height: 36px;
-  list-style: none;
+  list-style-type: none;
   margin-top: 80px;
   margin-bottom: 40px;
   display: flex;
@@ -660,6 +678,7 @@ body {
   color: #ffffff;
   border-radius: 4px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   width: 60px;
