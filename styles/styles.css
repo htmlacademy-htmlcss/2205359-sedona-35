@@ -570,6 +570,10 @@ body {
   margin: 20px;
 }
 
+.hotel-list-image {
+  object-fit: contain;
+}
+
 .hotel-type, .hotel-price {
   font-weight: 400;
 }
