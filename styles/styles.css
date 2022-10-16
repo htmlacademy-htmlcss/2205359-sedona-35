@@ -64,7 +64,7 @@ body {
 .button {
   font-weight: 700;
   font-size: 16px;
-  line-height: 20px;
+  /* line-height: 20px; */
   color:#ffffff;
   text-transform: uppercase;
   text-align: center;
@@ -117,6 +117,7 @@ body {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .navigation-list:first-child {
@@ -135,9 +136,7 @@ body {
 .navigation-user {
   margin-left: auto;
   max-width: 300px;
-  display: flex;
   justify-content: flex-end;
-  align-items: center;
 }
 
 .navigation-link {
@@ -210,26 +209,22 @@ body {
 
 .advantages-list, .recommendation-list {
   list-style-type: none;
-}
-
-.advantages-list {
   display: grid;
   grid-template-columns: repeat(3, 400px);
 }
 
-.advantages-item {
+.advantages-item, .recommendation-item {
   height: 384px;
 }
 
-.advantages-item:first-child {
+.advantages-item:first-child,
+.advantages-item:last-child {
   display: flex;
-  grid-column: 1/4;
+  grid-column: 1/-1;
 }
 
 .advantages-item:last-child {
-  display: flex;
   flex-direction: row-reverse;
-  grid-column: 1/4;
 }
 
 .advantages-item, .recommendation-item:not(:nth-child(2)) {
@@ -245,11 +240,19 @@ body {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
-.advantage-about {
+.advantage-about, .recommendation-about {
   width: 230px;
   margin: auto;
+}
+
+.advantage-about {
   margin-top: 103px;
   margin-bottom: 121px;
+}
+
+.recommendation-about {
+  margin-top: 92px;
+  margin-bottom: 111px;
 }
 
 .advantages-item:first-child .advantage-about,
@@ -276,21 +279,6 @@ body {
   margin-top: 30px;
 }
 
-.recommendation-list {
-  display: grid;
-  grid-template-columns: repeat(3, 400px);
-}
-
-.recommendation-item {
-  height: 384px;
-}
-
-.recommendation-about {
-  width: 230px;
-  margin:auto;
-  margin-top: 92px;
-  margin-bottom: 111px;
-}
 
 /* hotel search */
 
@@ -400,7 +388,6 @@ body {
   flex-wrap: wrap;
 }
 
-
 .social-links-link {
   display: block;
   min-width: 47px;
@@ -438,6 +425,7 @@ body {
 
 .filter-wrapper {
   background: url("../images/catalog-background.jpg") no-repeat;
+  background-size: cover;
   color: #ffffff;
   height: 412px;
 }
@@ -488,11 +476,6 @@ body {
   border: none;
 }
 
-/*---Пока что убрала внешний отступ в пользу использования gap, мне кажется, так будет лучше при переполнении контентом?
- .hotel-filter-group:first-child {
-  margin-right: 70px;
-} */
-
 .hotel-filter-title {
   font-weight: 700;
   font-size: 20px;
@@ -527,7 +510,7 @@ body {
 .button-reset {
   background: none;
   color: #ffffff;
-  border: none;
+  padding-bottom: 0;
 }
 
 /* catalog settings */
@@ -587,6 +570,10 @@ body {
   margin: 20px;
 }
 
+.hotel-list-image {
+  object-fit: contain;
+}
+
 .hotel-type, .hotel-price {
   font-weight: 400;
 }
@@ -624,6 +611,7 @@ body {
 
 .hotel-rating {
   font-size: 16px;
+  font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
