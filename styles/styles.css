@@ -140,13 +140,6 @@ body {
 
 /* header navigation */
 
-/* ---после того, как я задала внутренние отступы ссылкам - не нужно ни высоту,
-------ни отступы хедеру указывать, верно? Высота сама выстроилась на 64 пикселя
- .main-header, .inner-header {
-  /* padding-top: 15px;
-  padding-bottom: 15px;
-} */
-
 .navigation {
   width: 1060px;
   margin: 0 auto;
