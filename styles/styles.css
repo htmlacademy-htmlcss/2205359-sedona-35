@@ -148,7 +148,6 @@ body {
 .navigation-logo {
   display: block;
   position: absolute;
-  z-index: 1;
   top: 1px;
 }
 
@@ -1149,11 +1148,13 @@ input:active {
 .modal-search {
   position: relative;
   margin: auto;
-  padding: 64px 70px;
+  margin-top: 396px;
+  padding: 62px 70px;
   background-color: #ffffff;
   border-radius: 30px;
   width: 717px;
   box-sizing: border-box;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
 }
 
 .modal-content {
@@ -1168,7 +1169,7 @@ input:active {
   width: 52px;
   height: 52px;
   background-color: #F2F2F2;
-  top: 64px;
+  top: 61px;
   left: 613px;
   background-position: left 19px top 18px;
   background-repeat: no-repeat;
@@ -1229,7 +1230,7 @@ input:active {
   width: 100%;
   display: grid;
   grid-template-columns: max-content 1fr max-content 1fr;
-  column-gap: 24px;
+  column-gap: 18px;
   grid-template-rows: repeat(3, 48px);
   row-gap: 48px;
   border: none;
@@ -1279,7 +1280,7 @@ input:active {
 .date-invalid.shown, .date-valid.shown {
   display: block;
   position: absolute;
-  top: 54px;
+  top: 51px;
   left: 20px;
 }
 
@@ -1295,8 +1296,6 @@ input:active {
   cursor: pointer;
 }
 
-
-
 .modal-form-age-range {
   width: 247px;
   height: 48px;
@@ -1304,7 +1303,6 @@ input:active {
   align-items: center;
   justify-items: center;
 }
-
 
 .age-range-wrapper {
   width: 110px;
@@ -1333,15 +1331,13 @@ input:active {
 }
 
 .kids-label {
-  display: flex;
-  align-items: center;
-  margin-right: 10px;
+  margin-left: 5px;
 }
 
 .tooltip {
   position: absolute;
-  top: 368px;
-  left: 463px;
+  top: 364px;
+  left: 464px;
 }
 
 .tooltip-toggle {
@@ -1362,8 +1358,8 @@ input:active {
 
 .tooltip-text {
   position: absolute;
-  top: 39px;
-  left: -118px;
+  top: 40px;
+  left: -120px;
   width: 256px;
   height: 143px;
   font: inherit;
@@ -1374,7 +1370,7 @@ input:active {
   background-color: #333333;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
-  padding: 15px 18px 18px 22px;
+  padding: 23px 18px 18px 22px;
   box-sizing: border-box;
   display: none;
 }
@@ -1383,20 +1379,18 @@ input:active {
   display: block;
 }
 
-
 .tooltip-text:before {
   content:'';
   background: url("../images/tooltip-arrow.svg") no-repeat;
   width: 19px;
   height: 9px;
   position:absolute;
-  top: -7px;
+  top: -8px;
   left:0;
   right:0;
   margin-left: auto;
   margin-right: auto;
 }
-
 
 .modal-range-button {
   background: none;
@@ -1424,10 +1418,11 @@ input:active {
   fill-opacity: 20%;
 }
 
-
 .modal-search-form .button {
   grid-column: 1/-1;
   padding-top: 18px;
   padding-bottom: 18px;
   border-radius: 10px;
+  font-size: 20px;
+  line-height: 24px;
 }
