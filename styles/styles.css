@@ -1536,7 +1536,7 @@ input:active {
 .modal-range-button:hover .modal-icon path,
 .modal-range-button:focus .modal-icon path {
   fill: #000000;
-  fill-opacity: 100%;
+  fill-opacity: 1;
 }
 
 .modal-range-button:focus {
@@ -1544,7 +1544,7 @@ input:active {
 }
 
 .modal-range-button:focus .modal-icon path {
-  fill-opacity: 20%;
+  fill-opacity: 0.2;
 }
 
 .modal-search-form .button {
