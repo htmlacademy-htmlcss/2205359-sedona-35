@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Гостиницы</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon"  href="favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
@@ -72,9 +72,7 @@
             <form class="hotel-filter-form" action="https://echo.htmlacademy.ru/" method="get">
               <div class="hotel-filter-group-left">
                 <fieldset class="hotel-filter-group reset-margin-padding">
-                  <legend class="hotel-filter-title reset-margin-padding">
-                    Инфраструктура:
-                  </legend>
+                  <legend class="hotel-filter-title reset-margin-padding">Инфраструктура:</legend>
                   <ul class="hotel-filter-list reset-margin-padding">
                     <li class="hotel-filter-item reset-margin-padding">
                       <label class="control">
@@ -100,9 +98,7 @@
                   </ul>
                 </fieldset>
                 <fieldset class="hotel-filter-group reset-margin-padding">
-                  <legend class="hotel-filter-title reset-margin-padding">
-                    Тип Жилья:
-                  </legend>
+                  <legend class="hotel-filter-title reset-margin-padding">Тип Жилья:</legend>
                   <ul class="hotel-filter-list reset-margin-padding">
                     <li class="hotel-filter-item reset-margin-padding">
                       <label class="control">
@@ -130,15 +126,13 @@
               </div>
               <div class="hotel-filter-group-right">
                 <fieldset class="hotel-filter-group reset-margin-padding">
-                  <legend class="hotel-filter-title reset-margin-padding">
-                    Стоимость, ₽:
-                  </legend>
+                  <legend class="hotel-filter-title reset-margin-padding">Стоимость, ₽:</legend>
                   <div class="range">
                     <div class="range-wrapper-inputs">
                       <input class="range-input" type="number" id="min-price" value="0" name="min-price" readonly>
                       <label class="min-price-label" for="min-price">от</label>
-                      <input class="range-input" type="number" value="9000" name="max-price" readonly>
-                      <label class="max-price-label" for="min-price">до</label>
+                      <input class="range-input" type="number" id="max-price" value="9000" name="max-price" readonly>
+                      <label class="max-price-label" for="max-price">до</label>
                     </div>
                     <div class="range-scale">
                       <div class="range-bar" style="width: 226px; left: 1px">
