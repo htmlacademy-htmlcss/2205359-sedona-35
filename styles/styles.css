@@ -311,7 +311,7 @@ body {
 
 .advantages-item,
 .recommendation-item {
-  height: 384px;
+  min-height: 384px;
 }
 
 .recommendation-item {
@@ -406,6 +406,12 @@ body {
 .advantages-item:last-child .advantages-title::after {
   background-color: rgba(255, 255, 255, 0.3);
 }
+
+.advantage-illustration {
+  object-fit: contain;
+  align-self: center;
+}
+
 
 .recommendation-item::after {
   position: absolute;
@@ -562,7 +568,8 @@ input:active {
   padding-bottom: 35px;
   margin-left: 82px;
   margin-right: 70px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
   align-items: center;
 }
 
@@ -594,9 +601,13 @@ input:active {
   fill: rgba(104, 162, 202, 0.3);
 }
 
-.phone-link {
+.address-links {
+  width: 331px;
   margin-left: 249px;
+}
 
+
+.phone-link {
   font-size: 40px;
   font-style: normal;
   line-height: 40px;
@@ -617,9 +628,11 @@ input:active {
   position: relative;
 
   margin-left: 235px;
+  margin-right: auto;
   display: block;
   min-width: 115px;
   min-height: 33px;
+  justify-self: end;
 }
 
 .partner-link-img {
@@ -667,6 +680,7 @@ input:active {
   margin-top: 8px;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 
   font-size: 16px;
   line-height: 21px;
@@ -721,17 +735,19 @@ input:active {
   width: 1060px;
   margin: 40px auto;
   display: flex;
+  flex-wrap: wrap;
+  gap: 140px;
 }
 
 .hotel-filter-group-left,
 .hotel-filter-group-right {
   display: flex;
+  flex-wrap: wrap;
   gap: 70px
 }
 
 .hotel-filter-group-left {
   min-width: 370px;
-  margin-right: 140px;
 }
 
 .hotel-filter-group {
@@ -1177,7 +1193,7 @@ input:active {
   align-items: center;
   justify-content: center;
   width: 60px;
-  height: 60px;
+  min-height: 60px;
   margin-left: 8px;
 
   text-decoration: none;
