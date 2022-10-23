@@ -1481,7 +1481,7 @@ input:active {
 .tooltip-text {
   position: absolute;
   top: 40px;
-  left: -120px;
+  left: -115px;
 
   width: 256px;
   height: 143px;
