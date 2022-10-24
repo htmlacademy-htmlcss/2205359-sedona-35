@@ -155,7 +155,8 @@ body {
   margin: 0 auto;
 }
 
-.navigation-logo {
+.navigation-logo,
+.page-header-logo {
   position: absolute;
   top: 1px;
 }
@@ -251,6 +252,10 @@ body {
 
   border-radius: 50%;
   background-color: #7db54f;
+}
+
+.navigation-link.current {
+  user-select: none;
 }
 
 .navigation-link.current::before {
@@ -710,6 +715,10 @@ input:active {
   background-size: cover;
 }
 
+.breadcrumbs-link.current {
+  user-select: none;
+}
+
 .breadcrumbs-link,
 .breadcrumbs-link:focus {
   text-decoration: none;
@@ -1028,6 +1037,7 @@ input:active {
 
 .sort-by-price:disabled {
   color: rgba(0, 0, 0, 0.3);
+
   box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.3) inset;
   background: url("../images/select-disabled.svg") no-repeat right 20px center;
 }
