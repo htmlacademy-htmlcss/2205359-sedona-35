@@ -497,6 +497,7 @@ body {
   color: #ffffff;
 
   background: url("../images/subscribe-background.jpg") no-repeat;
+  background-color: #756157;
   background-size: cover;
 }
 
@@ -674,6 +675,7 @@ input:active {
   color: #ffffff;
 
   background: url("../images/catalog-background.jpg") no-repeat;
+  background-color: #82b3d3;
   background-size: cover;
 }
 
