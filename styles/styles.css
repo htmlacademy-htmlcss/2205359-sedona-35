@@ -130,6 +130,7 @@ body {
 
 .button-reset:focus {
   box-shadow: 0 0 0 3px #83b3d3 inset;
+  outline: none;
 }
 
 .button:active,
@@ -592,12 +593,12 @@ input:active {
   align-items: baseline;
 }
 
-.social-link:hover .social-link-img path,
-.social-link:focus .social-link-img path {
+.social-link:hover .social-link-img > path,
+.social-link:focus .social-link-img > path {
   fill: #68a2ca;
 }
 
-.social-link:active .social-link-img path {
+.social-link:active .social-link-img > path {
   fill: rgba(104, 162, 202, 0.3);
 }
 
@@ -643,12 +644,12 @@ input:active {
   left: 0;
 }
 
-.partner-link:hover .partner-link-img path,
-.partner-link:focus .partner-link-img path {
+.partner-link:hover .partner-link-img > path,
+.partner-link:focus .partner-link-img > path {
   fill: #756157;
 }
 
-.partner-link:active .partner-link-img path {
+.partner-link:active .partner-link-img > path {
   fill: rgba(117, 97, 87, 0.3);
 }
 
@@ -838,9 +839,11 @@ input:active {
   opacity: 30%;
 }
 
-.control:focus .control-mark {
+.control:focus .control-mark,
+.control:focus-within .control-mark {
   outline: #83b3d3 solid 3px;
 }
+
 
 /* range-slider */
 
@@ -1003,6 +1006,24 @@ input:active {
   background: url("../images/select-open.svg") no-repeat right 20px center;
 
   appearance: none;
+  cursor: pointer;
+}
+
+.sort-by-price:hover,
+.sort-by-price:focus {
+  box-shadow: 0 0 0 2px #68a2ca inset;
+  outline: none;
+}
+
+.sort-by-price:active {
+  box-shadow: 0 0 0 2px #3f5e72 inset;
+  outline: none;
+}
+
+.sort-by-price:disabled {
+  color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.3) inset;
+  background: url("../images/select-disabled.svg") no-repeat right 20px center;
 }
 
 .hotel-catalog-view {
@@ -1031,8 +1052,9 @@ input:active {
   box-shadow: 0 0 0 2px #000000 inset;
 }
 
-.card-grid-toggle.focus {
+.card-grid-toggle:focus {
   box-shadow: 0 0 0 2px #68a2ca inset;
+  outline: none;
 }
 
 .card-grid-toggle.grid {
@@ -1219,7 +1241,8 @@ input:active {
   background: none;
 }
 
-.pagination-link.active:hover {
+.pagination-link.active:hover,
+.pagination-link.active:focus {
   background-color: #68a2ca;
 }
 
@@ -1533,17 +1556,17 @@ input:active {
   cursor: pointer;
 }
 
-.modal-range-button:hover .modal-icon path,
-.modal-range-button:focus .modal-icon path {
+.modal-range-button:hover .modal-icon > path,
+.modal-range-button:focus .modal-icon > path {
   fill: #000000;
   fill-opacity: 1;
 }
 
 .modal-range-button:focus {
-  box-shadow: 0 0 0 3px #82b3d3;
+  outline: 3px solid #82b3d3;
 }
 
-.modal-range-button:focus .modal-icon path {
+.modal-range-button:focus .modal-icon > path {
   fill-opacity: 0.2;
 }
 
